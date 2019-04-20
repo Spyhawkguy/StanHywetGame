@@ -12,7 +12,7 @@ export class LogoComponent extends BaseComponent implements OnInit {
     {
       question: 'Does not trademark their logo',
       result: 'Your logo gets trademarked by a competing tire company.',
-      image: 'assets/goodyear.png'
+      image: 'assets/stolen.png'
     },
     {
       question: 'Trademarks the winged foot of Mercury',
@@ -22,7 +22,7 @@ export class LogoComponent extends BaseComponent implements OnInit {
     {
       question: 'Uses a free to use logo',
       result: 'Your logo can not get trademarked, but lots of other companies use it.',
-      image: 'assets/goodyear.png'
+      image: 'assets/free.png'
     },
   ];
 
