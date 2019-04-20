@@ -2,9 +2,16 @@
   <h1> Choose where you would like to start your business.</h1>
 </div>
 
-<div>
-  Start your business in an abandoned strawboard factory <button (click)="openPage('start')">click</button>
-</div>
+<mat-card>
+  <mat-card-content>
+    <p>
+        Start your business in an abandoned strawboard factory
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button (click)="openPage('start')">click</button>
+  </mat-card-actions>
+</mat-card>
 <div>
   Start your business in a brand new building <button (click)="openPage('start')">click</button>
 </div>
