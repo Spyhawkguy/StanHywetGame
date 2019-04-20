@@ -12,9 +12,23 @@
     <button mat-raised-button color="primary" (click)="openPage('start')">click</button>
   </mat-card-actions>
 </mat-card>
-<div>
-  Start your business in a brand new building <button (click)="openPage('start')">click</button>
-</div>
-<div>
-  Start your business in a kiosk <button (click)="openPage('start')">click</button>
-</div>
+<mat-card>
+  <mat-card-content>
+    <p>
+        Start you business in a brand new building
+    </p>
+  </mat-card-content>
+  <mat-card-actions align="end">
+    <button mat-raised-button color="primary" (click)="openPage('start')">click</button>
+  </mat-card-actions>
+</mat-card>
+<mat-card>
+  <mat-card-content>
+    <p>
+        Start your business in a kiosk
+    </p>
+  </mat-card-content>
+  <mat-card-actions align="end">
+    <button mat-raised-button color="primary" (click)="openPage('start')">click</button>
+  </mat-card-actions>
+</mat-card>
