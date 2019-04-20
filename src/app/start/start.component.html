@@ -2,30 +2,10 @@
   <h1> Choose where you would like to start your business.</h1>
 </div>
 
-<mat-card>
+<mat-card *ngFor="let q of questions">
   <mat-card-content>
     <p>
-        Start your business in an abandoned strawboard factory
-    </p>
-  </mat-card-content>
-  <mat-card-actions align="end">
-    <button mat-raised-button color="primary" (click)="openPage('start')">click</button>
-  </mat-card-actions>
-</mat-card>
-<mat-card>
-  <mat-card-content>
-    <p>
-        Start you business in a brand new building
-    </p>
-  </mat-card-content>
-  <mat-card-actions align="end">
-    <button mat-raised-button color="primary" (click)="openPage('start')">click</button>
-  </mat-card-actions>
-</mat-card>
-<mat-card>
-  <mat-card-content>
-    <p>
-        Start your business in a kiosk
+        {{q.question}}
     </p>
   </mat-card-content>
   <mat-card-actions align="end">
