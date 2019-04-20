@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
+import { BaseComponent } from '../base/base.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-start',
-  templateUrl: './start.component.html',
-  styleUrls: ['./start.component.scss']
+  templateUrl: '../base/base.question.html',
+  styleUrls: ['../base/base.component.scss']
 })
-export class StartComponent implements OnInit {
+export class StartComponent extends BaseComponent implements OnInit {
 
-  mode = 'question';
   questions = [
     {
       question: 'Start your business in an abandoned strawboard factory',
@@ -26,30 +27,19 @@ export class StartComponent implements OnInit {
     },
   ];
 
-
-
-  selectedQuestion = {
-    question: 'fake value',
-    result: 'fake result'
-  };
-
   funFact = {
     fact: 'Did you know that Goodyear started in a abandoned strawboard factory.',
     image: 'assets/factory.png',
     imageDescription: 'Photo of the Goodyear HQ'
   };
 
-  constructor() { }
+  constructor(public router: Router) {
+    super(router, 'question', 'Choose where you would like to start your business');
+  }
 
   ngOnInit() {
   }
 
-  selectQuestion(item: any) {
-    this.selectedQuestion = item;
-    this.setMode('result');
-  }
-  setMode(mode: string) {
-    this.mode = mode;
-  }
+
 }
 

@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 export class WelcomeComponent extends BaseComponent implements OnInit {
 
   constructor(public router: Router) {
-    super(router);
+    super(router, null, 'Stan Hywet Choose your Company');
   }
 
   ngOnInit() {
