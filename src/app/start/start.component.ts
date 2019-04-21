@@ -20,7 +20,7 @@ export class StartComponent extends QuestionComponent {
       },
       {
         question: 'Start you business in a brand new building',
-        result: 'You have all of the latest tech in your own new building, and your company is big',
+        result: 'You have all of the latest tech in your new building, and your company is big',
         image: 'assets/new.jpg'
       },
       {
