@@ -6,6 +6,7 @@ import { LogoComponent } from './logo/logo.component';
 import { EmployeesComponent } from './employees/employees.component';
 import { VehicleComponent } from './vehicle/vehicle.component';
 import { TireComponent } from './tire/tire.component';
+import { EndComponent } from './end/end.component';
 
 const routes: Routes = [
   { path: '', component: WelcomeComponent, pathMatch: 'full' },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'employees', component: EmployeesComponent },
   { path: 'vehicle', component: VehicleComponent },
   { path: 'tire', component: TireComponent },
+  { path: 'end', component: EndComponent },
 
 
 

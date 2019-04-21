@@ -35,5 +35,6 @@ export class TireComponent extends QuestionComponent {
       image: 'assets/space.jpg',
       imageDescription: 'Photo of the Goodyear HQ'
     };
+    this.nextPage = 'end';
   }
 }
