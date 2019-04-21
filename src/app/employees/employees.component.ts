@@ -16,24 +16,25 @@ export class EmployeesComponent extends QuestionComponent {
       {
         question: 'Hire hard working employees',
         result: 'Since you hired hard working employees you have made 1,200 sets of tires for the Henry Ford model T.',
-        image: 'assets/stolen.png'
+        image: 'assets/1200.jpg'
       },
       {
         question: 'Hire regular working employees',
         result: 'Since you hired regular working employees you made 400 sets of tires for the Henry Ford model T.',
-        image: 'assets/goodyear.png'
+        image: 'assets/400.png'
       },
       {
         question: 'Hire lazy employees',
         result: 'Since you hired lazy employees they only made 50 sets of tires for the Henry Ford model T.',
-        image: 'assets/free.png'
+        image: 'assets/50.jpg'
       },
     ];
 
     this.funFact = {
       fact: 'Did you know that Goodyear made 1,200 sets of tires for the Henry Ford model T. That is 4800 tires!',
-      image: 'assets/goodyear.png',
+      image: 'assets/1200.jpg',
       imageDescription: 'Photo of the Goodyear HQ'
     };
+    this.nextPage = 'vehicle';
   }
 }
