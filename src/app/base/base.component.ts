@@ -1,28 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-base',
-  template: `
-    <p>
-      base works!
-    </p>
-  `,
-  styleUrls: ['./base.component.scss']
+  template: ``,
+  styles: []
 })
-export class BaseComponent implements OnInit {
+export class BaseComponent {
 
   nextPage = '';
+  title = '';
 
-  constructor(public router: Router, public title: string) { }
+  constructor(public router: Router) { }
 
-  ngOnInit() {
-  }
-
-  openNextPage(){
+  openNextPage() {
     this.openPage(this.nextPage);
   }
-  
+
   openPage(routeName: string) {
     this.router.navigateByUrl(`/${routeName}`);
   }

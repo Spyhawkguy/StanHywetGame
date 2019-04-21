@@ -11,6 +11,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { StartComponent } from './start/start.component';
 import { LogoComponent } from './logo/logo.component';
 import { QuestionComponent } from './question/question.component';
+import { EmployeesComponent } from './employees/employees.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { QuestionComponent } from './question/question.component';
     WelcomeComponent,
     StartComponent,
     LogoComponent,
-    QuestionComponent
+    QuestionComponent,
+    EmployeesComponent
   ],
   imports: [
     BrowserModule,

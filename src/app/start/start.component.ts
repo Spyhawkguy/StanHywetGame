@@ -10,8 +10,8 @@ import { QuestionComponent } from '../question/question.component';
 export class StartComponent extends QuestionComponent {
 
   constructor(router: Router) {
-    super(router, 'Choose where you would like to start your business');
-
+    super(router);
+    this.title = 'Choose where you would like to start your business';
     this.questions = [
       {
         question: 'Start your business in an abandoned strawboard factory',

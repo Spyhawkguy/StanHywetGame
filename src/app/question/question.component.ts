@@ -20,8 +20,8 @@ export class QuestionComponent extends BaseComponent implements OnInit {
     result: 'fake result'
   };
 
-  constructor(router: Router, title: string) {
-    super(router, title);
+  constructor(router: Router) {
+    super(router);
   }
 
   ngOnInit() {

@@ -10,7 +10,8 @@ import { QuestionComponent } from '../question/question.component';
 export class LogoComponent extends QuestionComponent {
 
   constructor(public router: Router) {
-    super(router, 'Choose how to make your logo');
+    super(router);
+    this.title = 'Choose how to make your logo';
     this.questions = [
       {
         question: 'Does not trademark their logo',
@@ -34,5 +35,6 @@ export class LogoComponent extends QuestionComponent {
       image: 'assets/goodyear.png',
       imageDescription: 'Photo of the Goodyear HQ'
     };
+    this.nextPage = 'employees';
   }
 }
