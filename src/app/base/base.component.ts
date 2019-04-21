@@ -1,40 +1,24 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-base',
-  template: `
-    <p>
-      base works!
-    </p>
-  `,
-  styleUrls: ['./base.component.scss']
+  template: ``,
+  styles: []
 })
-export class BaseComponent implements OnInit {
-  title = 'title';
-  mode = null;
-  selectedQuestion = {
-    question: 'fake value',
-    result: 'fake result'
-  };
+export class BaseComponent {
 
-  constructor(public router: Router, startMode: string, title: string) {
-    this.title = title;
-    this.mode = startMode;
-  }
+  nextPage = '';
+  title = '';
 
-  ngOnInit() {
+  constructor(public router: Router) { }
+
+  openNextPage() {
+    this.openPage(this.nextPage);
   }
 
   openPage(routeName: string) {
     this.router.navigateByUrl(`/${routeName}`);
-  }
-  selectQuestion(item: any) {
-    this.selectedQuestion = item;
-    this.setMode('result');
-  }
-  setMode(mode: string) {
-    this.mode = mode;
   }
 
 }

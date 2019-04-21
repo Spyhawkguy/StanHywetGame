@@ -9,7 +9,7 @@
             </p>
         </mat-card-content>
         <mat-card-actions align="end">
-            <button mat-raised-button color="primary" (click)="selectQuestion(item)">click</button>
+            <button mat-raised-button color="primary" (click)="selectQuestion(item)">next</button>
         </mat-card-actions>
     </mat-card>
 </div>
@@ -30,7 +30,6 @@
             </p>
         </mat-card-content>
         <mat-card-actions align="end">
-            <button mat-raised-button color="primary" (click)="setMode('question')">back</button>
             <button mat-raised-button color="primary" (click)="setMode('fact')">next</button>
         </mat-card-actions>
     </mat-card>
@@ -48,5 +47,8 @@
                 {{funFact.fact}}
             </p>
         </mat-card-content>
+        <mat-card-actions align="end">
+            <button mat-raised-button color="primary" (click)="openNextPage()">next</button>
+        </mat-card-actions>
     </mat-card>
 </div>
