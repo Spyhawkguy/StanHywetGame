@@ -12,6 +12,8 @@ import { StartComponent } from './start/start.component';
 import { LogoComponent } from './logo/logo.component';
 import { QuestionComponent } from './question/question.component';
 import { EmployeesComponent } from './employees/employees.component';
+import { VehicleComponent } from './vehicle/vehicle.component';
+import { TireComponent } from './tire/tire.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { EmployeesComponent } from './employees/employees.component';
     StartComponent,
     LogoComponent,
     QuestionComponent,
-    EmployeesComponent
+    EmployeesComponent,
+    VehicleComponent,
+    TireComponent
   ],
   imports: [
     BrowserModule,
