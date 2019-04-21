@@ -10,6 +10,7 @@ import { BaseComponent } from './base/base.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { StartComponent } from './start/start.component';
 import { LogoComponent } from './logo/logo.component';
+import { QuestionComponent } from './question/question.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { LogoComponent } from './logo/logo.component';
     BaseComponent,
     WelcomeComponent,
     StartComponent,
-    LogoComponent
+    LogoComponent,
+    QuestionComponent
   ],
   imports: [
     BrowserModule,
