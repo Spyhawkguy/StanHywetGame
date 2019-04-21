@@ -1,0 +1,22 @@
+<div>
+  <mat-card class="fact-card">
+    <mat-card-header>
+      <mat-card-title>
+        {{title}}
+      </mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src="assets/tower.jpg" [alt]="funFact.imageDescription">
+    <mat-card-content>
+      <p>
+        Hopefully you made your company like you were F.A. Seiberling becauese he is the co-founder of Goodyear, and his
+        company is about to be 121 years old.
+      </p>
+      <p>
+        Try a different route next time to see what the outcomes are.
+      </p>
+    </mat-card-content>
+    <mat-card-actions align="end">
+      <button mat-raised-button color="primary" (click)="openNextPage()">Start Over</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

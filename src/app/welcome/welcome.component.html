@@ -1,9 +1,19 @@
 <div>
-  <h1>{{title}}</h1>
+  <mat-card class="fact-card">
+    <mat-card-header>
+      <mat-card-title>
+        {{title}}
+      </mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src="assets/house.jpeg" [alt]="funFact.imageDescription">
+    <mat-card-content>
+      <p>
+        Welcome to the Stan Hywet choose your company. You are F.A. Seiberling. You own a company called Goodyear. Pick
+        one of the three questions to make your company, and learn with facts along the way.
+      </p>
+    </mat-card-content>
+    <mat-card-actions align="end">
+      <button mat-raised-button color="primary" (click)="openNextPage()">Click to Start</button>
+    </mat-card-actions>
+  </mat-card>
 </div>
-<div>
-  <p>
-    Welcome to the Stan Hywet choose your company. You are F.A. Seiberling. You own a company called Goodyear. Pick one of the three questions to make your company, and learn with facts along the way.
-  </p>
-</div>
-<div><button mat-raised-button color="primary" (click)="openNextPage()">Click to Start!</button></div>

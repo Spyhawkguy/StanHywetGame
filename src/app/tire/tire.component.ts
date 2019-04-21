@@ -15,7 +15,7 @@ export class TireComponent extends QuestionComponent {
     this.questions = [
       {
         question: 'Try to make tires for all types of vehicles',
-        result: 'Your tires are loved by everyone! You even make tires for a spacecraft.',
+        result: 'Your tires are loved by everyone! You even make tires for spacecrafts.',
         image: 'assets/space.jpg'
       },
       {
@@ -25,7 +25,7 @@ export class TireComponent extends QuestionComponent {
       },
       {
         question: 'You only make bike tires',
-        result: 'Your tires are as popular as car tires are with cars becoming more popular.',
+        result: 'Your tires are not as popular as car tires with cars becoming more popular.',
         image: 'assets/biketires.jpg'
       },
     ];
@@ -35,5 +35,6 @@ export class TireComponent extends QuestionComponent {
       image: 'assets/space.jpg',
       imageDescription: 'Photo of the Goodyear HQ'
     };
+    this.nextPage = 'end';
   }
 }
