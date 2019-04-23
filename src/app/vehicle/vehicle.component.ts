@@ -26,7 +26,7 @@ export class VehicleComponent extends QuestionComponent {
       {
         question: 'Your advertising vehicle is a car',
         result: 'Everyone crossing the street to work can see your logo.',
-        image: 'assets/car.png'
+        image: 'assets/car.jpg'
       },
     ];
 
