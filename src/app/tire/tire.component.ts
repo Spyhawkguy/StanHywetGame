@@ -31,7 +31,7 @@ export class TireComponent extends QuestionComponent {
     ];
 
     this.funFact = {
-      fact: `Did you know that the first ever tires on the moon wre Goodyear's on the spacecraft Apollo 14.`,
+      fact: `Did you know that the first ever tires on the moon were Goodyear's on the spacecraft Apollo 14.`,
       image: 'assets/space.jpg',
       imageDescription: 'Photo of the Goodyear HQ'
     };
